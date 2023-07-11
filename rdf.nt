@@ -1,14 +1,16 @@
 <http://neo4j.com/indiv#Napoleon_Bonaparte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <neo4j://graph.schema#Person> .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#birthName> "Napoleone di Buonaparte" .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#birthDate> "1769-08-15" .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#deathDate> "1821-05-05" .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#leaderOf> <http://neo4j.com/indiv#French_Republic> .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#leaderOf> <http://neo4j.com/indiv#French_Empire> .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#militaryCommand> <http://neo4j.com/indiv#French_Revolutionary_Wars> .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#influencedBy> <http://neo4j.com/indiv#French_Revolution> .
-<http://neo4j.com/indiv#French_Republic> <neo4j://graph.schema#startTerm> "1799-01-01" .
-<http://neo4j.com/indiv#French_Republic> <neo4j://graph.schema#endTerm> "1804-12-31" .
-<http://neo4j.com/indiv#French_Empire> <neo4j://graph.schema#startTerm> "1804-01-01" .
-<http://neo4j.com/indiv#French_Empire> <neo4j://graph.schema#endTerm> "1814-12-31" .
-<http://neo4j.com/indiv#French_Empire> <neo4j://graph.schema#startTerm> "1815-01-01" .
-<http://neo4j.com/indiv#French_Empire> <neo4j://graph.schema#endTerm> "1815-12-31" .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#name> "Napoleon Bonaparte" .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#birthDate> "1769-08-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#deathDate> "1821-05-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#leaderOf> <http://neo4j.com/indiv#French_Revolutionary_Wars> .
+<http://neo4j.com/indiv#First_Consul_of_the_French_Republic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <neo4j://graph.schema#Position> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#positionHeld> <http://neo4j.com/indiv#First_Consul_of_the_French_Republic> .
+<http://neo4j.com/indiv#First_Consul_of_the_French_Republic> <neo4j://graph.schema#startDate> "1799"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://neo4j.com/indiv#First_Consul_of_the_French_Republic> <neo4j://graph.schema#endDate> "1804"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://neo4j.com/indiv#Emperor_of_the_French> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <neo4j://graph.schema#Position> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#positionHeld> <http://neo4j.com/indiv#Emperor_of_the_French> .
+<http://neo4j.com/indiv#Emperor_of_the_French> <neo4j://graph.schema#startDate> "1804"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://neo4j.com/indiv#Emperor_of_the_French> <neo4j://graph.schema#endDate> "1814"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#secondTerm> <http://neo4j.com/indiv#Emperor_of_the_French> .
+<http://neo4j.com/indiv#Emperor_of_the_French> <neo4j://graph.schema#secondTermDate> "1815"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#legacy> "His political and cultural legacy has endured. He was one of the most celebrated and controversial leaders in world history." .
