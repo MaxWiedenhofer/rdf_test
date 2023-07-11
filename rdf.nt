@@ -1,0 +1,31 @@
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+dbr:Napoleon rdf:type dbo:Person .
+dbr:Napoleon dbo:birthDate "1769-08-15"^^xsd:date .
+dbr:Napoleon dbo:deathDate "1821-05-05"^^xsd:date .
+dbr:Napoleon dbo:birthName "Napoleone di Buonaparte" .
+
+dbr:Napoleon dbo:leaderOf dbr:French_Republic .
+dbr:Napoleon dbo:termPeriod _:term1 .
+_:term1 dbo:startDate "1799-01-01"^^xsd:date .
+_:term1 dbo:endDate "1804-12-31"^^xsd:date .
+
+dbr:Napoleon dbo:leaderOf dbr:French_Empire .
+dbr:Napoleon dbo:termPeriod _:term2 .
+_:term2 dbo:startDate "1804-01-01"^^xsd:date .
+_:term2 dbo:endDate "1814-12-31"^^xsd:date .
+
+dbr:Napoleon dbo:termPeriod _:term3 .
+_:term3 dbo:startDate "1815-01-01"^^xsd:date .
+_:term3 dbo:endDate "1815-12-31"^^xsd:date .
+
+dbr:Napoleon dbo:activeYearsStartYear "1789"^^xsd:gYear .
+dbr:Napoleon dbo:activeYearsEndYear "1821"^^xsd:gYear .
+
+dbr:Napoleon dbo:militaryCommand dbr:French_Revolutionary_Wars .
+
+dbr:Napoleon dbo:influencedBy dbr:French_Revolution .
+
