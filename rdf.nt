@@ -1,12 +1,14 @@
-<http://neo4j.com/indiv#Napoleon_Bonaparte> neo:name "Napoleon Bonaparte" .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> neo:birthName "Napoleone di Buonaparte" .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> neo:birthDate "1769-08-15"^^xsd:date .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> neo:deathDate "1821-05-05"^^xsd:date .
-<http://neo4j.com/indiv#French_Republic> neo:name "French Republic" .
-<http://neo4j.com/indiv#French_Empire> neo:name "French Empire" .
-<http://neo4j.com/indiv#French_Revolutionary_Wars> neo:name "French Revolutionary Wars" .
-<http://neo4j.com/indiv#French_Revolution> neo:name "French Revolution" .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> neo:leaderOf <http://neo4j.com/indiv#French_Republic> .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> neo:leaderOf <http://neo4j.com/indiv#French_Empire> .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> neo:militaryCommand <http://neo4j.com/indiv#French_Revolutionary_Wars> .
-<http://neo4j.com/indiv#Napoleon_Bonaparte> neo:influencedBy <http://neo4j.com/indiv#French_Revolution> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <neo4j://graph.schema#Person> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#birthName> "Napoleone di Buonaparte" .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#birthDate> "1769-08-15" .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#deathDate> "1821-05-05" .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#leaderOf> <http://neo4j.com/indiv#French_Republic> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#leaderOf> <http://neo4j.com/indiv#French_Empire> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#militaryCommand> <http://neo4j.com/indiv#French_Revolutionary_Wars> .
+<http://neo4j.com/indiv#Napoleon_Bonaparte> <neo4j://graph.schema#influencedBy> <http://neo4j.com/indiv#French_Revolution> .
+<http://neo4j.com/indiv#French_Republic> <neo4j://graph.schema#startTerm> "1799-01-01" .
+<http://neo4j.com/indiv#French_Republic> <neo4j://graph.schema#endTerm> "1804-12-31" .
+<http://neo4j.com/indiv#French_Empire> <neo4j://graph.schema#startTerm> "1804-01-01" .
+<http://neo4j.com/indiv#French_Empire> <neo4j://graph.schema#endTerm> "1814-12-31" .
+<http://neo4j.com/indiv#French_Empire> <neo4j://graph.schema#startTerm> "1815-01-01" .
+<http://neo4j.com/indiv#French_Empire> <neo4j://graph.schema#endTerm> "1815-12-31" .
