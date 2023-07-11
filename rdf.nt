@@ -2,12 +2,10 @@
 <http://neo4j.com/indiv#Napoleon_Bonaparte> neo:birthName "Napoleone di Buonaparte" .
 <http://neo4j.com/indiv#Napoleon_Bonaparte> neo:birthDate "1769-08-15"^^xsd:date .
 <http://neo4j.com/indiv#Napoleon_Bonaparte> neo:deathDate "1821-05-05"^^xsd:date .
-
 <http://neo4j.com/indiv#French_Republic> neo:name "French Republic" .
 <http://neo4j.com/indiv#French_Empire> neo:name "French Empire" .
 <http://neo4j.com/indiv#French_Revolutionary_Wars> neo:name "French Revolutionary Wars" .
 <http://neo4j.com/indiv#French_Revolution> neo:name "French Revolution" .
-
 <http://neo4j.com/indiv#Napoleon_Bonaparte> neo:leaderOf <http://neo4j.com/indiv#French_Republic> .
 <http://neo4j.com/indiv#Napoleon_Bonaparte> neo:leaderOf <http://neo4j.com/indiv#French_Empire> .
 <http://neo4j.com/indiv#Napoleon_Bonaparte> neo:militaryCommand <http://neo4j.com/indiv#French_Revolutionary_Wars> .
